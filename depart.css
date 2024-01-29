@@ -1,0 +1,87 @@
+@font-face {
+    font-family: police2;
+    src: url("fonts/Satoshi-Variable\ 2.ttf")
+}
+
+@font-face {
+    font-family: police1;
+    src: url("fonts/HelveticaNeue.ttc")
+}
+   
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+}
+
+#introText {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+ 
+
+}
+#enterButton{
+  text-align: center;
+  margin-left: 15vw;
+  margin-top: 30vw;
+  position: fixed;
+  width: 70vw;
+  font-size: 2vw;
+  font-family: police1;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#enterButton:hover{
+  text-shadow: 0 0 5px rgba(25, 255, 44, 0.671); 
+  color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  
+}
+#introText a {
+
+text-decoration: none;
+color: #333;
+}
+
+#introText {
+  opacity: 0;
+  animation: fadeIn 9s  ;
+ 
+}
+#introText :hover {
+  
+  text-shadow: 0 0 9px rgba(25, 255, 44, 0.671);
+ 
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
